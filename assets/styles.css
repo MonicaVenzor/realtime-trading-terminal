@@ -1,0 +1,230 @@
+/* =========================================================
+   Yahoo-styled Dashboard — Final CSS
+   ---------------------------------------------------------
+   - Navbar with Yahoo gradient
+   - Brand title/Subtitle
+   - Logo behavior (per theme)
+   - Light/Dark toggle styling
+   - Chart cards (light/dark variants)
+   - Smooth theme transitions
+   - Centered Plotly titles
+   ========================================================= */
+
+
+/* =============== Brand: title & subtitle =============== */
+
+.brand-title-lg {            /* Optional bigger title (if you need it) */
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .5px;
+}
+
+.brand-title {               /* Gradient “Yahoo” look for the main title */
+  font-weight: 700;
+  font-size: 1.45rem;
+  letter-spacing: .3px;
+  margin-left: 4px;
+  background: linear-gradient(90deg, #6001D2 0%, #7A37FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-subtitle {
+  font-size: 0.9rem;
+  color: #9aa0a6;
+  margin-left: 8px;
+}
+
+
+/* ===================== Navbar (header) ===================== */
+
+.nav-wrap {
+  /* Yahoo gradient bar */
+  background: linear-gradient(90deg, #6001D2 0%, #7A37FF 100%);
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  min-height: 56px;
+  transition: background .45s ease, box-shadow .35s ease;
+}
+
+/* Align items inside the navbar */
+.nav-wrap .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Subtle hover glow */
+.nav-wrap:hover {
+  box-shadow: 0 0 14px rgba(122, 55, 255, .45);
+}
+
+/* Brand logo sizing (no filter here; theme-specific filters are below) */
+.brand-logo {
+  height: 28px !important;
+  width: auto !important;
+  max-height: 32px !important;
+  object-fit: contain;
+  margin-right: 10px;
+  display: block;
+}
+
+/* Theme-specific logo treatment */
+/* [data-theme="dark"]  .nav-wrap .brand-logo { filter: brightness(0) invert(1); }
+[data-theme="light"] .nav-wrap .brand-logo { filter: none; }
+
+/* Optional: brighten title text a touch inside gradient header */
+.nav-wrap .brand-title {
+  background: linear-gradient(90deg, #EDE7FF 0%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-wrap .brand-subtitle {
+  color: rgba(255,255,255,.9);
+}
+
+
+/* ================= Light/Dark toggle group ================= */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.theme-toggle .form-check {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Dark theme radio appearance */
+[data-theme="dark"] .theme-toggle .form-check-input {
+  background-color: #0b0e14;
+  border-color: #586170;
+}
+[data-theme="dark"] .theme-toggle .form-check-label {
+  color: #cfd6e6;
+}
+
+/* Light theme radio appearance */
+[data-theme="light"] .theme-toggle .form-check-input {
+  background-color: #f1f3f4;
+  border-color: #c7cdd3;
+}
+[data-theme="light"] .theme-toggle .form-check-label {
+  color: #374151;
+}
+
+/* Shared hover/focus feedback */
+.theme-toggle .form-check-input:hover {
+  box-shadow: 0 0 0 0.2rem rgba(124,140,255,.25);
+}
+.theme-toggle .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem rgba(121, 91, 255, 0.5);
+}
+.theme-toggle .form-check-input:checked ~ .form-check-label {
+  color: #ffffff;
+}
+
+
+/* ===================== Chart cards ===================== */
+
+.chart-card {
+  border-radius: 12px;
+  border: 1px solid rgba(60, 64, 67, 0.10);
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: background-color .35s ease, color .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.chart-card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Light variant */
+[data-theme="light"] .chart-card {
+  background: #ffffff;
+  border-color: rgba(60,64,67,.10);
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+}
+
+/* Dark variant */
+[data-theme="dark"] .chart-card {
+  background: #14161D;
+  border-color: rgba(255,255,255,.06);
+  box-shadow: 0 1px 3px rgba(0,0,0,.35);
+}
+[data-theme="dark"] .chart-card:hover {
+  box-shadow: 0 0 12px rgba(122, 55, 255, .25);
+}
+
+
+/* ================= Global theme transitions ================= */
+
+html, body, .nav-wrap {
+  transition: background-color .35s ease, color .35s ease, box-shadow .35s ease;
+}
+
+/* Page background by theme */
+[data-theme="light"] body { background-color: #ffffff; }
+[data-theme="dark"]  body { background-color: #0E0E12; }
+
+
+/* ================== Plotly title centering ================== */
+
+.js-plotly-plot .gtitle {          /* Center the Plotly graph titles */
+  text-anchor: middle !important;.nav-wrap img.brand-logo
+}
+.js-plotly-plot .gtitle > text {
+  font-weight: 600;
+}
+
+/* --- Single title size/weight --- */
+.brand-title-lg{
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .3px;
+}
+
+/* --- Subtitle at right --- */
+.brand-subtitle{
+  font-size: .9rem;
+  color: rgba(255,255,255,.9);
+}
+
+/* --- Header gradient --- */
+.nav-wrap{
+  background: linear-gradient(90deg, #6001D2 0%, #7A37FF 100%);
+  color:#fff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  min-height:56px;
+}
+
+/* --- Logo always white over purple header --- */
+.nav-wrap .brand-logo{
+  height: 28px !important;
+  width: auto !important;
+  margin-right: 10px;
+  object-fit: contain;
+  /* keep it white in both themes so it never disappears */
+  filter: brightness(0) invert(1);
+}
+
+/* Radio items contrast tweaks */
+.theme-toggle .form-check-label{ font-weight:600; }
+[data-theme="light"] .theme-toggle .form-check-label{ color:#1f2937; }
+[data-theme="dark"]  .theme-toggle .form-check-label{ color:#cfd6e6; }
+
+/* Softer cards (ya los traías, por si acaso) */
+.chart-card{ border-radius:12px; }
+
+/* Force white logo in both themes, always on top of the purple header */
+.nav-wrap img.brand-logo,
+.nav-wrap .brand-logo {
+  filter: brightness(0) invert(1) !important;
+}
