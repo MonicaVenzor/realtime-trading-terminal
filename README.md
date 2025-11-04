@@ -110,7 +110,12 @@ http://127.0.0.1:8050/
 
 ## 🖼️ Dashboard Preview
 
-<p align="center"> <img src="data/lightyahoo.png" width="45%" alt="Light theme preview"> <img src="data/darkyahoo.png" width="45%" alt="Dark theme preview"> </p>
+**Dashboard Dark theme**
+![Dashboard dark](data/darkyahoo.png)
+--- 
+**Dashboard light theme**
+![Dashboard dark](data/lightyahoo.png)
+---
 
 ## 💡 Key Highlights
 
