@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.* 
+
+# Jupyter / temp
+.ipynb_checkpoints/
+.DS_Store
+
+# Data & cache (keep the folder, ignore files)
+data/*
+!data/.gitkeep
+
+# Logs
+*.log
+
+# Dash/Plotly
+.cache/
