@@ -15,6 +15,9 @@ plotly==5.24.0
 # Data source (Yahoo Finance)
 yfinance==0.2.43
 
+# Forecasting (LinearRegression)
+scikit-learn==1.4.2
+
 # ---------------------------------------------------------------
 # Optional dev dependencies (uncomment if you use them locally)
 # ---------------------------------------------------------------
