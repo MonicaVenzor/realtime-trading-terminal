@@ -39,7 +39,15 @@ realtime-trading-terminal/
 │  ├─ styles.css            # Custom theme & branding
 │  └─ logo.png              # Yahoo-style logo
 │
+├─ data/                    
+│  ├─ darkyahoo.png         # Dashboard Dark Yahoo
+│  ├─ lightyahoo.png        # Dashboard Light Yahoo
+│  └─ demo_dashboard.gif    # Dashboard Yahoo Gif
+│
 ├─ notebooks/               # Exploratory notebooks
+│  └─ EDA.ipynb             
+│
+├─ test/                    # unit tests      
 │
 ├─ run.py                   # App entry point
 ├─ requirements.txt
