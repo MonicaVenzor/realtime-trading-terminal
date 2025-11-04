@@ -10,7 +10,7 @@ Includes dynamic KPIs, sparklines, volatility metrics, and interactive visual an
 
 ## 🎬 Live Demo (Preview)
 
-<p align="center"> <img src="assets/demo_dashboard.gif" width="90%" alt="Real-Time Trading Terminal demo"> </p>
+<p align="center"> <img src="data/demo_dashboard.gif" width="90%" alt="Real-Time Trading Terminal demo"> </p>
 
 ## 📖 Project Overview
 
@@ -110,7 +110,7 @@ http://127.0.0.1:8050/
 
 ## 🖼️ Dashboard Preview
 
-<p align="center"> <img src="assets/demo_light.png" width="45%" alt="Light theme preview"> <img src="assets/demo_dark.png" width="45%" alt="Dark theme preview"> </p>
+<p align="center"> <img src="data/lightyahoo.png" width="45%" alt="Light theme preview"> <img src="data/darkyahoo.png" width="45%" alt="Dark theme preview"> </p>
 
 ## 💡 Key Highlights
 
